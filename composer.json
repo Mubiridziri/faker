@@ -1,0 +1,27 @@
+{
+    "name": "mubiridziri/composer_package_template",
+    "description": "A Composer Package Template",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mubiridziri\\ComposerPackageTemplate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yury Potapov",
+            "email": "yupotapov@icloud.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/dependency-injection": "^5.4 | ^6.2",
+        "symfony/config": "^5.4 | ^6.2",
+        "symfony/http-kernel": "^5.4 | ^6.2"
+    },
+    "require-dev": {
+        "symfony/test-pack": "^1.1",
+        "symfony/dotenv": "^6.2"
+    }
+}
