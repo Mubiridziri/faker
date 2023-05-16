@@ -1,13 +1,13 @@
 <?php
 
-namespace Mubiridziri\ComposerPackageTemplate\DependencyInjection;
+namespace Mubiridziri\Faker\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class ComposerPackageTemplateBundleExtension extends Extension
+class FakerBundleExtension extends Extension
 {
 
 

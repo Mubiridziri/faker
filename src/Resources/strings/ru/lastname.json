@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Петров",
+    "sex": "male"
+  },
+  {
+    "text": "Сидоров",
+    "sex": "male"
+  },
+  {
+    "text": "Остин",
+    "sex": "male"
+  },
+  {
+    "text": "Петрова",
+    "sex": "female"
+  },
+  {
+    "text": "Сидорова",
+    "sex": "female"
+  },
+  {
+    "text": "Остина",
+    "sex": "female"
+  }
+]
