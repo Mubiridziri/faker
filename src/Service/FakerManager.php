@@ -124,4 +124,17 @@ class FakerManager
         $city = json_decode($city, true);
         return $this->getRandomElement($city);
     }
+
+    public function getRandomPhoneNumber(): string
+    {
+        $ruPrefix = '+7';
+        $number = rand(1000000000, 9999999999);
+        return $ruPrefix . $number;
+    }
+
+    public function getRandomDateTimeThisMonth(): \DateTime
+    {
+        $date = date('01-m-Y');
+        return date_modify(new \DateTime($date), ' + ' . rand(2, 27) . ' days');
+    }
 }

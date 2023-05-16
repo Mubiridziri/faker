@@ -30,3 +30,4 @@ $result = $faker->{useAnyPublicMethods}()
 
 - More mocks data
 - Add ENG Language
+- Override Language after construct
