@@ -104,4 +104,24 @@ class FakerManager
     {
         return str_shuffle($string);
     }
+
+    public function getRandomCompany(): string
+    {
+        $companyPrefix = $this->getResourceByLanguage('company_prefix.json');
+        $companyPrefix = json_decode($companyPrefix, true);
+        $companyPrefix = $this->getRandomElement($companyPrefix);
+
+        $companyName = $this->getResourceByLanguage('company.json');
+        $companyName = json_decode($companyName, true);
+        $companyName = $this->getRandomElement($companyName);
+
+        return sprintf('%s %s', $companyPrefix, $companyName);
+    }
+
+    public function getRandomCity(): string
+    {
+        $city = $this->getResourceByLanguage('city.json');
+        $city = json_decode($city, true);
+        return $this->getRandomElement($city);
+    }
 }

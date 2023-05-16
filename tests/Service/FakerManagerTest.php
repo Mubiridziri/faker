@@ -81,4 +81,18 @@ class FakerManagerTest extends TestCase
         $result = $faker->getMiddleName('female');
         self::assertIsString($result);
     }
+
+    public function testGetRandomCompany()
+    {
+        $faker = new FakerManager();
+        $result = $faker->getRandomCompany();
+        self::assertIsString($result);
+    }
+
+    public function testGetRandomCity()
+    {
+        $faker = new FakerManager();
+        $result = $faker->getRandomCity();
+        self::assertIsString($result);
+    }
 }
