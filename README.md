@@ -1,6 +1,7 @@
 # Faker 
 ___
 > Faker Library for PHP 7.4/8.2
+
 [![Symfony](https://github.com/Mubiridziri/faker/actions/workflows/symfony.yml/badge.svg)](https://github.com/Mubiridziri/faker/actions/workflows/symfony.yml)
 
 
