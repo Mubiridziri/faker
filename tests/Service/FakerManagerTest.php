@@ -95,4 +95,18 @@ class FakerManagerTest extends TestCase
         $result = $faker->getRandomCity();
         self::assertIsString($result);
     }
+
+    public function testGetRandomPhoneNumber()
+    {
+        $faker = new FakerManager();
+        $result = $faker->getRandomPhoneNumber();
+        self::assertIsString($result);
+    }
+
+    public function testGetRandomDateTimeThisMonth()
+    {
+        $faker = new FakerManager();
+        $result = $faker->getRandomDateTimeThisMonth();
+        self::assertTrue($result instanceof \DateTime);
+    }
 }
